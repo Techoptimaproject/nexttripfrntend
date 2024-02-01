@@ -1,0 +1,43 @@
+ 
+.image_width{
+    width: 300px;
+    height:200px;
+    padding-bottom:200px;
+    padding: 20px;
+    /* margin-top: -20px; */
+    margin-left: 10px;
+    /* border: 1px solid rgb(211, 209, 209); */
+    background-color: rgb(248, 250, 250);
+    box-shadow: 0px 0px 5px 0px;
+}
+ 
+ /* .img_bg_color
+ {
+background-color: #000000;
+ } */
+ 
+ .card_size
+ {
+    width: 660px;
+    height:420px;
+    margin-top: 20px;
+    background-color: rgb(247, 245, 244);
+ }
+.placeholder
+{
+    font-size: 200px;
+}
+ 
+.savebutton{
+border-radius: none;
+}
+ 
+.btn_merge
+{
+    border:'2px solid';
+    width:'20px';
+    height: 2px;
+}
+
+ 
+ 

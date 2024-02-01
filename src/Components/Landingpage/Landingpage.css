@@ -1,0 +1,155 @@
+.searchbarwidth {
+  width: 855px;
+  margin: 2px;
+  border-radius: 35px;
+  border: 1px solid rgb(234, 228, 228);
+  height: 45px;
+
+}
+
+.margintop {
+  margin-top: 95px;
+}
+
+.notification {
+  /* background-color: #555; */
+  /* color: white; */
+  text-decoration: none;
+  margin-top: 5px;
+  padding: 2px 5px;
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  border: none;
+  background-color: none;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -1px;
+  right: 5px;
+  padding: 4px;
+  border-radius: 100%;
+  background: #ff1e00;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  width: 15px
+}
+
+.notificationicon {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+input::placeholder {
+  font-size: larger;
+  margin: 5px;
+  color: #ecf0f2;
+}
+
+/* input{
+    margin-left:45px ;
+   } */
+
+.badge {
+  font-size: 5;
+}
+
+
+.sidenavmargin {
+  color: black;
+  margin-top: 5px;
+  font-weight: 700;
+  border-radius: 25px;
+}
+
+.logo {
+  color: black;
+  margin-top: 5px;
+  font-weight: 700;
+  border-radius: 25px;
+}
+
+.sidenavmargin:hover {
+  background-color: #000000;
+  border-radius: 25px;
+
+  color: rgb(255, 255, 255);
+}
+
+.sidenavmargin.active {
+  background-color: #000000;
+  border-radius: 25px;
+
+  color: rgb(255, 255, 255);
+}
+
+.background {
+  background-color: #f5f8f9;
+  height: 50px;
+
+}
+
+.nav_margin {
+  margin-top: 2px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .searchbarwidth {
+    width: 315px;
+    border-radius: 35px;
+    border: 1px solid rgb(234, 228, 228);
+    height: 45px;
+
+  }
+
+  .nav_margin {
+    margin-top: 2px;
+    margin-left: 4px;
+  }
+
+}
+
+@media screen and (max-width: 1440px) and (min-width:1200px) {
+  .searchbarwidth {
+    width: 680px;
+    /* margin-top: 2px; */
+    border-radius: 35px;
+    border: 1px solid rgb(234, 228, 228);
+    height: 45px;
+
+  }
+
+  .nav_margin {
+    margin-top: 2px;
+    margin-left: 4px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .searchbarwidth {
+    width: 205px;
+    border-radius: 35px;
+    border: 1px solid rgb(234, 228, 228);
+    height: 45px;
+
+  }
+
+
+
+
+  .sidenavmargin {
+    color: black;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+}

@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+ 
+ 
+  .topnav {
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+ 
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+  .topnav a.active {
+    background-color: white;
+    color: white;
+  }
+ 
+  .topnav .login-container {
+    float: right;
+  }
+ 
+  .topnav form {
+    display: inline-block;
+    margin-top: 10px;
+  }
+ 
+  .container {
+    width: 100%;
+    columns: 4;
+    column-gap: 15px;
+    padding: 15px;
+    /* margin-left: 15%; */
+  }
+ 
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+ 
+  .image-container img {
+    width: 100%;
+  }
+ 
+  .button-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+ 
+  .image-container:hover .button-container {
+    opacity: 3;
+    /* Show on hover */
+  }
+ 
+  .button-container button {
+    border-radius: 3rem;
+    height: 40px;
+    width: 80px;
+    margin:10px;
+    background-color: red;
+    color: white;
+  }
+ 
+  .download-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    align-items: flex-end;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    /* Smooth transition */
+  }
+ 
+  .shar-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    align-items: flex-end;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+    /* Smooth transition */
+  }
+ 
+  .image-container:hover .download-icon {
+    opacity: 3;
+    /* Show on hover */
+  }
+ 
+  .image-container:hover .shar-icon {
+    opacity: 2;
+    /* Show on hover */
+  }
+ 
+  .download-icon img {
+    width: 30px;
+    /* Adjust the size of the download icon */
+  }
+ 
+  .shar-icon img {
+    width: 30px;
+  }
+  .search
+  {
+    width: 10;
+    height: 10;
+    padding: 10px;
+  }
+  #Home {
+    padding: 22px;;
+  }
+  #Explore{
+    padding: 22px;
+  }
+  #Create
+  {
+    padding: 22px;
+  }
+  #pimg
+  {
+    padding: 22px;
+  }
+  #Profile{
+    padding-top: 10px;
+  }
+  #Arrow{
+    padding-top: 10px;
+  }
+ 
+  .hidden {
+    display: none;
+}
+ 
+/* styles.css */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+ 
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+ 
+.button-container button {
+  cursor: pointer;
+  border: none;
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+ 
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  max-width: 200px;
+}
+ 
+ 
+ 
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px;
+  }
+}
